@@ -15,7 +15,7 @@ dotenv.config()
 const app= express();
 const port=process.env.PORT || 2000;
 // Allowed URL or origin 
-const allowedOrigins=['http://localhost:5173']
+const allowedOrigins=['https://veggiegram.vercel.app']
 
 await connectDB();
 await connectCloudinary();
@@ -33,5 +33,5 @@ app.use("/api/address",addressRouter);
 app.use("/api/order",orderRouter);
 
 app.listen(port,()=>{
-    console.log(`Server running on http://localhost:${port}`)
+    console.log(`Server running on https://veggie-gram.vercel.app`)
 })   
