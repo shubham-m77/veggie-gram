@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useAppContext } from '../context/AppContext';
 import {ProductType} from '../context/AppContext';
 
 const AllVeggies = () => {
      const {products,addToCart,searchQuery,cartItems,removeFromCart,navigate}=useAppContext();
-        const [count, setCount] = useState<number>(0);
         const [filteredProducts,setFilteredProducts]=useState<any>([]);
         useEffect(()=>{
             if(searchQuery.length>0){

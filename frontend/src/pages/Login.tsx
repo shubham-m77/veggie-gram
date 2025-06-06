@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import { assets } from '../assets/images/assets'
 import { Link } from 'react-router-dom'
 import { useAppContext } from '../context/AppContext';
 import toast from 'react-hot-toast';
 
 const Login = () => {
-        const {setUser,navigate,axios,user}=useAppContext();
+        const {setUser,navigate,axios}=useAppContext();
         const [email,setEmail] =useState<string>("");
         const [password,setPassword] =useState<string>("");
 

@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { dummyOrders } from '../assets/images/assets';
+import  { useEffect, useState } from 'react';
 import { useAppContext } from '../context/AppContext';
 import OrderTracker from '../components/OrderTracker';
 

@@ -1,4 +1,3 @@
-import {useEffect} from 'react'
 import { FaAngleRight } from "react-icons/fa6";
 import { BsCartCheckFill } from "react-icons/bs";
 import { FaUserCog } from "react-icons/fa";

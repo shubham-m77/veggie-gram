@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import { ProductType, useAppContext } from '../context/AppContext';
 import { Link, useParams } from 'react-router-dom';
 import { assets } from '../assets/images/assets';
-import toast from 'react-hot-toast';
 import { FaCartArrowDown,FaArrowUp  } from "react-icons/fa6";
 
 const ProductOverview = () => {

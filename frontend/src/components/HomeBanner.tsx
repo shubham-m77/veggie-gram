@@ -1,4 +1,3 @@
-import React from 'react'
 import {assets} from "../assets/images/assets"
 import { Link } from 'react-router-dom'
 

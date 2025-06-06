@@ -1,4 +1,3 @@
-import React from 'react'
 import { assets, features } from '../assets/images/assets'
 
 const FeatureBanner = () => {

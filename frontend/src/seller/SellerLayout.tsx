@@ -5,7 +5,7 @@ import { assets } from "../assets/images/assets";
 import toast from "react-hot-toast";
 
 const SellerLayout = () => {
-        const {isSeller,setIsSeller,navigate,axios} = useAppContext();
+        const {navigate,axios} = useAppContext();
     
 
 const logoutHandler= async()=>{

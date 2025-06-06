@@ -1,7 +1,4 @@
 // App.js
-
-import React from 'react';
-
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home.tsx';
 import Account from './pages/Account.tsx';
@@ -21,13 +18,13 @@ import SellerLayout from './seller/SellerLayout.tsx';
 import OrderList from './seller/OrderList.tsx';
 import VeggiesList from './seller/VeggiesList.tsx';
 import AddVeggies from './seller/AddVeggies.tsx';
-import Loading from './components/Loading.tsx';
+// import Loading from './components/Loading.tsx';
 
 function App() {
   const isSellerUrl=useLocation().pathname.includes("seller");
   const isSignInPage=useLocation().pathname.includes("login");
   const isRegisterPage=useLocation().pathname.includes("register");
-      const {isSeller,navigate} = useAppContext();
+      const {isSeller} = useAppContext();
   
 
 

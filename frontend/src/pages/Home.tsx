@@ -1,4 +1,3 @@
-import React from 'react'
 import HomeBanner from '../components/HomeBanner'
 import Categories from '../components/Categories'
 import Bestseller from '../components/Bestseller'

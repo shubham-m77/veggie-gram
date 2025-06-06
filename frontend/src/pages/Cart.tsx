@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { ProductType, useAppContext } from '../context/AppContext';
-import { assets, dummyAddress } from '../assets/images/assets';
+import { assets } from '../assets/images/assets';
 import toast from 'react-hot-toast';
 import logo from "../assets/veggiegram.png"
 
@@ -116,7 +116,7 @@ else {
 };
 
 const getCart=()=>{
-    let tempCartArray:any[] = [];
+    const tempCartArray:any[] = [];
     for(const item in cartItems){
         const product = products.find((p:any) => p._id === item);
         if(product){
@@ -283,7 +283,7 @@ if (cartArray.length === 0) {
                         </button>
                         {showAddress && (
                             <div className="absolute top-12 py-1 bg-white border border-gray-300 text-sm w-full">
-                                {addresses?addresses.map((addresses:any,index:number)=>(
+                                {addresses?addresses.map((addresses:any)=>(
 <p onClick={() => {setShowAddress(false);setSelectedAddress(addresses)}} className="text-gray-500 p-2 hover:bg-gray-100">
                                      {addresses.firstName} {addresses.lastName}, {addresses.addressLine1},{addresses.addressLine2}, {addresses.city}, {addresses.state}, {addresses.zipCode}, {addresses.phoneNumber} <br />
                                 </p>

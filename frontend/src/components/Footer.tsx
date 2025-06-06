@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from "../assets/veggiegram.png"
 import { footerLinks } from '../assets/images/assets'
@@ -20,7 +19,7 @@ const Footer = () => {
                     <div key={idx}>
                     <p className='text-lg text-gray-800'>{ftr.title}</p>
                     <ul className='mt-3 flex flex-col gap-2 text-sm'>
-                    {ftr.links.map((link,index)=>(<li><Link className='hover:text-gray-600' to={link.url}>{link.text}</Link></li>))}
+                    {ftr.links.map((link)=>(<li><Link className='hover:text-gray-600' to={link.url}>{link.text}</Link></li>))}
                     </ul>
                 </div>
 ))}

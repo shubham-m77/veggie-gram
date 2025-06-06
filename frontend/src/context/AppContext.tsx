@@ -127,7 +127,7 @@ const fetchUser = async()=>{
   
 // Add Cart items
 const addToCart=(itemId:number)=>{
-  let cartData= structuredClone(cartItems);
+  const cartData= structuredClone(cartItems);
   if(cartData[itemId]){
     cartData[itemId]+=1;
   }
@@ -139,13 +139,13 @@ const addToCart=(itemId:number)=>{
 }
 // update cart item quantity
 const updateCartItem=(itemId:any,quantity:number)=>{
- let cartData=structuredClone(cartItems);
+ const cartData=structuredClone(cartItems);
  cartData[itemId]=quantity;
  setCartItems(cartData);
 }
 // remove items from cart
 const removeFromCart=(itemId:number)=>{
-  let cartData=structuredClone(cartItems);
+  const cartData=structuredClone(cartItems);
   if(cartData[itemId]){
     cartData[itemId]-=1;
     if(cartData[itemId]===0){
@@ -158,7 +158,7 @@ const removeFromCart=(itemId:number)=>{
 
 // remove items from cart
 const removeCartItem=(itemId:number)=>{
-  let cartData=structuredClone(cartItems);
+  const cartData=structuredClone(cartItems);
   if(cartData[itemId]){
     cartData[itemId]=0;
     if(cartData[itemId]===0){

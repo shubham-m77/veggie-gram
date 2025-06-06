@@ -1,10 +1,7 @@
-import React, { useState } from 'react'
-// import { categories } from '../assets/images/assets'
 import { useAppContext } from '../context/AppContext'
 
 const Bestseller = () => {
-    const {navigate,products,addToCart,updateCartItem,cartItems,removeFromCart}=useAppContext();
-    const [count, setCount] = useState(0);
+    const {navigate,products,addToCart,cartItems,removeFromCart}=useAppContext();
   return (
 
     <div>
