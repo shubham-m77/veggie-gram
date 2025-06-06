@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Merienda:wght@300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import "flowbite/src/themes/default"; */
+
+body{font-family: "Urbanist",sans-serif;margin: 0;padding: 0;}
+@theme{--color-primary:#06723e;
+--color-secondary:#98bc5e;
+--color-primary-dull:#a5d6a7;
+--color-bg:#e3f5e4;
+}
+.brand-logo h1{color: var(--color-primary);}
+.brand-logo h1 span{color: var(--color-secondary);}
+.desktop-menu-links a:hover{color: var(--color-primary);}
+/* .searchBar:focus{border-color: #088b4c;} */
+.no-scrollbar::-webkit-scrollbar{
+    display: none;
+}
