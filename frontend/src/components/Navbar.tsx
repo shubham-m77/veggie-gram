@@ -18,7 +18,7 @@ export const Navbar = () => {
 
     return (
     
-        <nav className="w-full transition-all z-[50] ease-in-out top-0 sticky h-[70px] border-b-[1px] flex items-center justify-between px-6  md:px-12 lg:px-20 xl:px-32 py-4 bg-gray-50 text-gray-900 transition-all shadow-sm">  
+        <nav className="w-full  z-[50] ease-in-out top-0 sticky h-[70px] border-b-[1px] flex items-center justify-between px-6  md:px-12 lg:px-20 xl:px-32 py-4 bg-gray-50 text-gray-900 transition-all shadow-sm">  
             <Link to="/" className="flex items-center gap-1.5 text-xl font-extrabold brand-logo" onClick={()=>{setOpen(false);}}>
                 <img className="h-9 md:h-10 " src={logo} alt="VeggieGram" />
                 <h1 className="text-[18px] md:text-xl">Veggie<span>Gram</span></h1>
@@ -75,8 +75,8 @@ export const Navbar = () => {
                 </button></Link>):(<><button onClick={()=>{open?setOpen(false):setOpen(true);navigate("/login"); scrollTo(0,0)}} className="flex cursor-pointer ">
                     Login <IoLogIn className="text-xl"/>
                 </button></>)}
-                <Link to="/about" className="block">About</Link>
-                <Link to="/contact" className="block">Contact</Link>
+                {/* <Link to="/about" className="block">About</Link>
+                <Link to="/contact" className="block">Contact</Link> */}
                 </div>
             </div>
            
