@@ -50,7 +50,7 @@ const Account = () => {
           <button  onClick={logoutHandler} className="transition-all ease-linear rounded-md card text-md items-center justify-center p-2 flex-col flex hover:bg-primary-dull/30 cursor-pointer bg-primary-dull/20" > 
           <div className="rounded-full bg-gray-100 p-1.5"><CiLogout className='text-xl' /></div>Log-out</button></div>
         </div>
-        {/* <div className='col-span-3 rounded border-gray-400 border-[1px] shadow bg-white  p-2' >Pc Page</div> */}
+        <div className='col-span-3 rounded p-2 hidden md:block' ></div>
     </div>
     </div>
   )
