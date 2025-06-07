@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Jua&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
 /* @import "flowbite/src/themes/default"; */
 @theme{--color-primary:#06723e;
 --color-secondary:#98bc5e;
