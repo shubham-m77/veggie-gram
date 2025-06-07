@@ -161,7 +161,7 @@ useEffect(() => {
 }, []);
 
 if (cartArray.length === 0) {
-    return (<div className=' my-8 bg-gray-100/50 p-6 rounded-md'>
+    return (<div className=' my-8 bg-gray-100/50 p-4 md:p-6 rounded-md'>
         <div className='flex flex-col items-center justify-center'>
             <div className="text-center text-3xl text-red-500 font-semibold">Your cart is empty!</div>
             <button onClick={() => navigate('/veggies')} className="mt-4 bg-primary/80 hover:bg-primary cursor-pointer  text-white py-2 px-4 rounded">Continue Shopping</button>
@@ -172,7 +172,7 @@ if (cartArray.length === 0) {
       <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 items-center justify-center  gap-4 lg:gap-7 my-8'>
               {products.filter((product:ProductType)=>product.inStock)?.slice(0, 5).map((product:ProductType,idx:number)=>(
                   <div key={idx}  className="border border-gray-500/20 gap-7 rounded-md md:px-4 px-3 py-2 bg-gray-50 w-full">
-                  <div onClick={() => navigate(`/veggies/${product.category.toLowerCase()}/${product._id}`)} className="group cursor-pointer flex items-center justify-center px-2">
+                  <div onClick={() => navigate(`/veggies/${product.category.toLowerCase()}/${product._id}`)} className="group cursor-pointer flex items-center justify-center px-3">
                       <img className="group-hover:scale-105 transition max-w-26 md:max-w-36" src={product.images[0]} alt={product.name} />
                   </div>
                   <div className="text-gray-500/60 text-sm">
@@ -191,7 +191,7 @@ if (cartArray.length === 0) {
                                       <svg width="14" height="14" className='' viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                           <path d="M.583.583h2.333l1.564 7.81a1.17 1.17 0 0 0 1.166.94h5.67a1.17 1.17 0 0 0 1.167-.94l.933-4.893H3.5m2.333 8.75a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0m6.417 0a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0" className='stroke-gray-900' stroke-linecap="round" stroke-linejoin="round" />
                                       </svg>
-                                      Add
+                                      
                                   </button>
                               ) : (
                                   <div className="flex items-center justify-center gap-2 md:w-20 w-16 h-[34px] bg-indigo-500/25 rounded select-none">
