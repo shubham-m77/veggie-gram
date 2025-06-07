@@ -217,7 +217,7 @@ if (cartArray.length === 0) {
 }
 
     return (<div>
-        <div className="flex flex-col md:flex-row py-8 max-w-6xl w-full px-6 mx-auto">
+        <div className="flex flex-col md:flex-row py-4 md:py-8 max-w-6xl w-full md:px-6 mx-auto">
             <div className='flex-1 max-w-4xl '>
                 <h1 className="text-3xl font-medium mb-6">
                     Shopping Cart <span className="text-sm text-primary">{getCartItemCount()} Items</span>

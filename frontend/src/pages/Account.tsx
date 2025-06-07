@@ -40,7 +40,7 @@ const Account = () => {
           <h3 className='font-semibold text-lg text-primary'>{`${user?.name}`}</h3>
 
             </div><hr className='border-gray-300 my-2'/>
-        <div className="flex justify-around">
+        <div className="flex justify-around gap-x-2">
           <button onClick={() => navigate("/edit-profile")} className="transition-all ease-linear rounded-md card text-md items-center justify-center p-2 flex flex-col hover:bg-primary-dull/30 cursor-pointer bg-primary-dull/20">
             <div className="rounded-full bg-gray-100 p-1.5"><FaUserCog className='text-xl'/></div>
             Profile
@@ -50,7 +50,7 @@ const Account = () => {
           <button  onClick={logoutHandler} className="transition-all ease-linear rounded-md card text-md items-center justify-center p-2 flex-col flex hover:bg-primary-dull/30 cursor-pointer bg-primary-dull/20" > 
           <div className="rounded-full bg-gray-100 p-1.5"><CiLogout className='text-xl' /></div>Log-out</button></div>
         </div>
-        <div className='col-span-3 rounded p-2 hidden md:block' ></div>
+        <div className='md:col-span-3 rounded p-2 hidden md:block' ></div>
     </div>
     </div>
   )
